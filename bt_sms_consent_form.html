@@ -1,0 +1,244 @@
+<!-- ============================================================
+     Bicker Table Advisory: Contact form with SMS consent (Shape CRM)
+     Paste everything between the START and END markers into the page
+     where the form should appear. Before publishing, set:
+       1. SHAPE_POST_URL (bottom of this snippet)
+       2. The name="" attributes, to match Shape's field names
+       3. The Terms of Service and Privacy Policy links
+     ============================================================ -->
+
+<!-- START BT SMS FORM -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+  .bt-form {
+    --bt-navy: #0e1b31;
+    --bt-navy-2: #16274a;
+    --bt-cyan: #49d6e0;
+    --bt-accent: #7fd8e2;
+    --bt-ink: #eef3f8;
+    --bt-muted: #a9b7c9;
+    --bt-line: #2b3d5e;
+    --bt-error: #ff8f8f;
+    box-sizing: border-box;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--bt-navy);
+    color: var(--bt-ink);
+    border: 1px solid var(--bt-line);
+    border-radius: 6px;
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .bt-form *, .bt-form *::before, .bt-form *::after { box-sizing: inherit; }
+
+  .bt-form h2 {
+    margin: 0 0 0.35rem;
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    color: var(--bt-ink);
+  }
+  .bt-form .bt-intro {
+    margin: 0 0 1.75rem;
+    color: var(--bt-muted);
+  }
+
+  .bt-form .bt-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem 1.25rem;
+  }
+  @media (max-width: 560px) {
+    .bt-form { padding: 1.5rem 1.25rem; }
+    .bt-form .bt-grid { grid-template-columns: 1fr; }
+  }
+
+  .bt-form label.bt-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  .bt-form .bt-optional {
+    font-weight: 400;
+    color: var(--bt-muted);
+  }
+  .bt-form input[type="text"],
+  .bt-form input[type="tel"],
+  .bt-form input[type="email"] {
+    width: 100%;
+    padding: 0.75rem 0.85rem;
+    font: inherit;
+    color: var(--bt-ink);
+    background: var(--bt-navy-2);
+    border: 1px solid var(--bt-line);
+    border-radius: 4px;
+  }
+  .bt-form input::placeholder { color: #6f809a; }
+  .bt-form input:focus-visible,
+  .bt-form button:focus-visible {
+    outline: 2px solid var(--bt-cyan);
+    outline-offset: 2px;
+    border-color: var(--bt-cyan);
+  }
+
+  .bt-form .bt-consent {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem;
+    align-items: start;
+    margin: 1.5rem 0 0;
+    padding: 1rem;
+    border: 1px solid var(--bt-line);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--bt-muted);
+  }
+  .bt-form .bt-consent input[type="checkbox"] {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin: 0.15rem 0 0;
+    accent-color: var(--bt-cyan);
+    cursor: pointer;
+  }
+  .bt-form .bt-consent label { cursor: pointer; }
+  .bt-form .bt-consent a { color: var(--bt-accent); }
+
+  .bt-form button {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.95rem 1rem;
+    font: inherit;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--bt-navy);
+    background: var(--bt-cyan);
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .bt-form button:hover { background: var(--bt-accent); }
+  .bt-form button[disabled] { opacity: 0.6; cursor: wait; }
+
+  .bt-form .bt-status {
+    margin: 1rem 0 0;
+    font-size: 0.95rem;
+    min-height: 1.5em;
+  }
+  .bt-form .bt-status.is-error { color: var(--bt-error); }
+
+  .bt-form .bt-done { display: none; }
+  .bt-form.is-sent form { display: none; }
+  .bt-form.is-sent .bt-done { display: block; }
+</style>
+
+<section class="bt-form" id="bt-contact">
+  <form id="bt-shape-form" novalidate>
+    <h2>Start the conversation</h2>
+    <p class="bt-intro">Tell us how to reach you and we'll follow up within one business day.</p>
+
+    <div class="bt-grid">
+      <label class="bt-field">First name
+        <input type="text" name="firstName" autocomplete="given-name" placeholder="John" required>
+      </label>
+      <label class="bt-field">Last name
+        <input type="text" name="lastName" autocomplete="family-name" placeholder="Doe" required>
+      </label>
+      <label class="bt-field">Phone <span class="bt-optional">(optional)</span>
+        <input type="tel" name="phone" autocomplete="tel" placeholder="(000) 000-0000">
+      </label>
+      <label class="bt-field">Email
+        <input type="email" name="email" autocomplete="email" placeholder="sample@email.com" required>
+      </label>
+    </div>
+
+    <!-- SMS consent: optional and unchecked by default, as carriers require -->
+    <div class="bt-consent">
+      <input type="checkbox" id="bt-sms-consent" name="smsConsent" value="Yes">
+      <label for="bt-sms-consent" id="bt-consent-text">By checking the box, you consent to receive text messages from Bicker Table Advisory. Messaging frequency varies. Message and data rates may apply. Expect important notifications about our services, updates on upcoming meetings, and replies from your dedicated representative. You can opt out at any time by replying "STOP" to any message. Reply "HELP" for assistance. For more information, please read our <a href="/terms.html" target="_blank" rel="noopener">Terms of Service</a> and <a href="/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</label>
+    </div>
+
+    <!-- Consent record: lands in the lead's notes in Shape -->
+    <input type="hidden" name="smsConsentText" id="bt-consent-record">
+    <input type="hidden" name="consentTimestamp" id="bt-consent-time">
+    <input type="hidden" name="sourcePage" id="bt-source-page">
+
+    <button type="submit" id="bt-submit">Get started</button>
+    <p class="bt-status" id="bt-status" role="status" aria-live="polite"></p>
+  </form>
+
+  <div class="bt-done" tabindex="-1" id="bt-done">
+    <h2>Thanks, we have your details</h2>
+    <p class="bt-intro">Someone from Bicker Table Advisory will be in touch within one business day.</p>
+  </div>
+</section>
+
+<script>
+(function () {
+  // Paste the posting URL for this source from Shape (Marketing Sources).
+  // Format: https://secure.setshape.com/postlead/{CRM ID}/{Source ID}
+  var SHAPE_POST_URL = "https://secure.setshape.com/postlead/YOUR_CRM_ID/YOUR_SOURCE_ID";
+
+  var wrap = document.getElementById("bt-contact");
+  var form = document.getElementById("bt-shape-form");
+  var status = document.getElementById("bt-status");
+  var button = document.getElementById("bt-submit");
+  var consentBox = document.getElementById("bt-sms-consent");
+
+  function fail(msg) {
+    status.textContent = msg;
+    status.className = "bt-status is-error";
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    status.textContent = "";
+    status.className = "bt-status";
+
+    var first = form.firstName.value.trim();
+    var last = form.lastName.value.trim();
+    var email = form.email.value.trim();
+
+    if (!first || !last) { fail("Enter your first and last name."); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { fail("Enter a valid email address, like name@company.com."); return; }
+
+    // Record exactly what the person agreed to, and when
+    document.getElementById("bt-consent-record").value = consentBox.checked
+      ? document.getElementById("bt-consent-text").textContent.replace(/\s+/g, " ").trim()
+      : "Not given";
+    document.getElementById("bt-consent-time").value = new Date().toISOString();
+    document.getElementById("bt-source-page").value = window.location.href;
+
+    var data = new URLSearchParams(new FormData(form));
+    if (!consentBox.checked) data.set("smsConsent", "No");
+
+    button.disabled = true;
+    button.textContent = "Sending";
+
+    fetch(SHAPE_POST_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: data.toString()
+    })
+    .then(function () {
+      wrap.classList.add("is-sent");
+      document.getElementById("bt-done").focus();
+    })
+    .catch(function () {
+      button.disabled = false;
+      button.textContent = "Get started";
+      fail("Your details didn't send. Check your connection and select Get started again.");
+    });
+  });
+})();
+</script>
+<!-- END BT SMS FORM -->
