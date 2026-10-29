@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>The Buyer Is the Second Reader: Bicker Table Advisory</title>
+<meta name="description" content="On a matching marketplace a screener reads your profile before any buyer does, against a request you cannot see. What a profile written for the first read looks like.">
+<link rel="canonical" href="https://bickertable.com/the-buyer-is-the-second-reader.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Buyer Is the Second Reader">
+<meta property="og:description" content="On a matching marketplace a screener reads your profile before any buyer does, against a request you cannot see. What a profile written for the first read looks like.">
+<meta property="og:url" content="https://bickertable.com/the-buyer-is-the-second-reader.html">
+<meta property="og:site_name" content="Bicker Table Advisory">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Buyer Is the Second Reader">
+<meta name="twitter:description" content="On a matching marketplace a screener reads your profile before any buyer does, against a request you cannot see. What a profile written for the first read looks like.">
+<meta property="og:image" content="https://bickertable.com/images/the-buyer-is-the-second-reader.jpg">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta name="twitter:image" content="https://bickertable.com/images/the-buyer-is-the-second-reader.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;0,8..60,800;1,8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#eeeeec;
+    --paper-dim:#e4e3df;
+    --ink:#101c33;
+    --ink-soft:#4a5164;
+    --navy:#0e1b31;
+    --accent:#7fd8e2;
+    --cyan:#49d6e0;
+    --blue:#2e86c7;
+    --rule:rgba(16,28,51,0.14);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; color-scheme:light only;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px; margin:0 auto; padding:0 32px;}
+  h1,h2,h3{ font-family:'Source Serif 4', serif; font-weight:700; color:var(--ink); margin:0; }
+  p{ margin:0; }
+  a{ color:inherit; }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--blue);
+    font-weight:600;
+  }
+  .kicker{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--blue);
+    font-weight:600;
+    margin-bottom:14px;
+  }
+  .lede{ font-size:16.5px; color:var(--ink-soft); max-width:64ch; margin-top:14px; }
+  section{ padding:88px 0; border-top:1px solid var(--rule); }
+  .zone-gray{ background:var(--paper-dim); }
+  .zone-navy{ background:var(--navy); color:var(--paper); border-top:none; }
+
+  /* ===== top nav ===== */
+  .top-nav{ background:var(--navy); padding:20px 0 18px; position:relative; z-index:2; }
+  .top-nav .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; row-gap:12px; }
+  .top-nav .wordmark{
+    font-family:'Source Serif 4', serif; font-weight:700; font-size:15px; letter-spacing:0.03em;
+    color:var(--paper); text-decoration:none; display:flex; align-items:center; gap:10px;
+  }
+  .top-nav .wordmark::before{ content:""; width:9px; height:9px; background:var(--accent); transform:rotate(45deg); border-radius:1px; display:inline-block; }
+  .top-nav .nav-links{ display:flex; flex-wrap:wrap; row-gap:8px; gap:26px; font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; }
+  .top-nav .nav-links a{ color:rgba(242,240,234,0.62); text-decoration:none; transition:color .2s ease; }
+  .top-nav .nav-links a:hover{ color:var(--paper); }
+  @media(max-width:720px){ .top-nav .nav-links{ gap:16px; font-size:10.5px; } }
+
+  /* ===== hero ===== */
+  header.hero{ padding:96px 0 100px; position:relative; background:var(--navy); color:var(--paper); overflow:hidden; }
+  header.hero::before{
+    content:""; position:absolute; inset:0;
+    background-image:radial-gradient(rgba(242,240,234,0.05) 1px, transparent 1px);
+    background-size:24px 24px;
+  }
+  header.hero .wrap{ position:relative; z-index:1; }
+  .hero h1{ font-size:clamp(32px,4.6vw,50px); font-weight:800; line-height:1.18; max-width:19ch; margin-top:20px; color:var(--paper); }
+  .hero h2.sub-question{ font-family:'Source Serif 4', serif; font-style:italic; font-weight:600; font-size:clamp(19px,2.4vw,24px); color:var(--accent); max-width:38ch; margin-top:22px; line-height:1.4; }
+  .hero p.sub{ max-width:64ch; font-size:16.5px; color:#c3ccdb; margin-top:26px; line-height:1.65; }
+  .hero .cta-row{ display:flex; gap:16px; margin-top:38px; flex-wrap:wrap; }
+  .btn{
+    display:inline-block; background:var(--navy); color:var(--paper); border:1.5px solid var(--paper);
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px; letter-spacing:0.06em; text-transform:uppercase;
+    padding:13px 22px; text-decoration:none; transition:all .2s ease;
+  }
+  .btn:hover{ background:var(--paper); color:var(--navy); }
+  .btn.ghost{ background:transparent; border:1px solid var(--ink); color:var(--ink); }
+  .btn.ghost:hover{ background:var(--ink); color:var(--paper); }
+  .btn.on-navy-ghost{ background:transparent; border:1px solid rgba(242,240,234,0.4); color:var(--paper); }
+  .btn.on-navy-ghost:hover{ border-color:var(--paper); }
+
+  /* ===== stat band ===== */
+  .stat-band{ background:var(--navy); color:var(--paper); }
+  .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:30px; margin-top:44px; }
+  @media(max-width:820px){ .stat-grid{ grid-template-columns:1fr 1fr; } }
+  .stat-card{ border-top:2px solid var(--accent); padding-top:16px; }
+  .stat-num{ font-family:'Source Serif 4', serif; font-weight:800; font-size:clamp(30px,4vw,42px); color:var(--paper); line-height:1; }
+  .stat-label{ font-size:13px; color:#aab6c8; margin-top:10px; line-height:1.5; }
+  .stat-source{ font-size:10.5px; color:#7d8aa0; margin-top:6px; font-family:'IBM Plex Mono', monospace; }
+  .stat-quote{ font-family:'Source Serif 4', serif; font-style:italic; font-size:clamp(18px,2.4vw,23px); color:var(--paper); max-width:46ch; margin-top:56px; line-height:1.5; }
+  .stat-quote.dim{ color:#8fa3bd; margin-top:14px; }
+
+  /* ===== two-audience section ===== */
+  .split{ display:grid; grid-template-columns:1fr 1fr; gap:0; margin-top:44px; border:1px solid var(--rule); }
+  @media(max-width:720px){ .split{ grid-template-columns:1fr; } }
+  .split > div{ padding:36px 34px; }
+  .split > div:first-child{ border-right:1px solid var(--rule); }
+  @media(max-width:720px){ .split > div:first-child{ border-right:none; border-bottom:1px solid var(--rule); } }
+  .split .tag{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--blue); }
+  .split h3{ font-size:21px; margin-top:10px; }
+  .split p{ color:var(--ink-soft); font-size:14.5px; margin-top:10px; }
+
+  /* ===== flow / process ===== */
+  .flow{ margin-top:40px; border-top:1px solid var(--rule); }
+  .flow-step{ counter-increment:step; display:grid; grid-template-columns:56px 1fr; gap:18px; padding:22px 0; border-bottom:1px solid var(--rule); align-items:baseline; }
+  .flow{ counter-reset:step; }
+  .flow-step::before{ content:counter(step,decimal-leading-zero); font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--blue); }
+  .flow-step .label{ font-family:'Source Serif 4', serif; font-weight:700; font-size:18px; }
+  .flow-step p{ color:var(--ink-soft); font-size:14px; margin-top:6px; max-width:58ch; }
+
+  /* ===== industry / path grid ===== */
+  .industry-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin-top:40px; border:1px solid var(--rule); }
+  @media(max-width:820px){ .industry-grid{ grid-template-columns:1fr; } }
+  .industry-card{ padding:30px 26px; border-right:1px solid var(--rule); }
+  .industry-card:last-child{ border-right:none; }
+  @media(max-width:820px){ .industry-card{ border-right:none; border-bottom:1px solid var(--rule); } }
+  .industry-card.active{ background:var(--paper); }
+  .industry-card .soon-tag{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.08em; }
+  .industry-card h3{ font-size:19px; margin-top:8px; }
+  .industry-card p{ font-size:13.5px; color:var(--ink-soft); margin-top:10px; }
+  .industry-card .btn{ margin-top:16px; padding:9px 16px; font-size:11px; }
+
+  /* ===== comparison ===== */
+  .compare{ display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:40px; }
+  @media(max-width:720px){ .compare{ grid-template-columns:1fr; } }
+  .compare > div{ padding:28px 26px; border:1px solid var(--rule); }
+  .compare .tag{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-soft); }
+  .compare h4{ font-family:'Source Serif 4', serif; font-weight:700; font-size:19px; margin-top:10px; }
+  .compare p{ color:var(--ink-soft); font-size:14px; margin-top:10px; }
+  .compare.answer{ border-color:var(--blue); }
+  .compare.answer .tag{ color:var(--blue); }
+
+  .pullquote{ font-family:'Source Serif 4', serif; font-style:italic; font-size:clamp(20px,2.6vw,27px); color:var(--ink); max-width:36ch; line-height:1.45; margin-top:44px; }
+  .pullquote + .pullquote{ margin-top:16px; color:var(--blue); }
+
+  /* ===== founder ===== */
+  .founder-grid{ display:grid; grid-template-columns:180px 1fr; gap:36px; margin-top:34px; align-items:start; }
+  @media(max-width:600px){ .founder-grid{ grid-template-columns:1fr; } }
+  .founder-grid img{ width:100%; border-radius:2px; }
+  .founder-grid p{ color:var(--ink-soft); font-size:15px; line-height:1.7; margin-bottom:16px; }
+
+  /* ===== footer ===== */
+  footer.zone-navy{ padding:80px 0 40px; }
+  footer h2{ color:var(--paper); font-size:clamp(24px,3.4vw,34px); max-width:20ch; line-height:1.3; }
+  footer .footer-cta{ margin-top:30px; }
+  footer .footer-nav{ margin-top:56px; padding-top:24px; border-top:1px solid rgba(242,240,234,0.15); display:flex; gap:26px; flex-wrap:wrap; font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; }
+  footer .footer-nav a{ color:rgba(242,240,234,0.6); text-decoration:none; }
+  footer .fine{ margin-top:24px; font-size:11.5px; color:#7d8aa0; }
+</style>
+<style>
+  .article-header{ max-width:680px; margin:0 auto; text-align:left; }
+  .article-header .eyebrow{ margin-bottom:18px; }
+  .article-header h1{ font-size:clamp(30px,4.4vw,44px); line-height:1.22; color:var(--paper); }
+  .article-meta{ margin-top:22px; font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:#aab6c8; letter-spacing:0.04em; }
+
+  .article-body{ max-width:680px; margin:0 auto; }
+  .article-body p{ font-size:17px; line-height:1.75; color:var(--ink); margin-top:22px; }
+  .article-body p.lede-p{ font-size:19px; color:var(--ink-soft); }
+  .article-body h2.section-head{
+    font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:12.5px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--blue); margin-top:52px; margin-bottom:6px;
+  }
+  .article-body p.standalone{
+    font-family:'Source Serif 4', serif; font-style:italic; font-weight:600; font-size:22px; color:var(--ink);
+    margin:36px 0; line-height:1.5; border-left:2px solid var(--blue); padding-left:22px;
+  }
+  .article-cta{
+    max-width:680px; margin:64px auto 0; background:var(--navy); color:var(--paper);
+    padding:36px 34px; text-align:center;
+  }
+  .article-cta p{ font-size:15px; color:#c3ccdb; margin-top:12px; }
+  .article-cta .btn{ margin-top:20px; }
+  .back-link{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; }
+</style>
+<style>
+  .sources-list{ margin:44px 0 0; padding:22px 0 0; border-top:1px solid var(--rule); list-style:none; }
+  .sources-list li{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; line-height:1.7; color:var(--ink-soft); margin-top:8px; }
+  .sources-list li:first-child{ margin-top:0; }
+  .essay-cover{ margin:0; max-width:620px; }
+  .essay-cover img{ display:block; width:100%; height:auto; border:1px solid var(--rule); }
+  @media(max-width:640px){ .essay-cover{ max-width:100%; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Buyer Is the Second Reader",
+  "description": "On a matching marketplace a screener reads your profile before any buyer does, against a request you cannot see. What a profile written for the first read looks like.",
+  "author": {
+    "@type": "Person",
+    "name": "Jamie Arias"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bicker Table Advisory",
+    "url": "https://bickertable.com"
+  },
+  "mainEntityOfPage": "https://bickertable.com/the-buyer-is-the-second-reader.html",
+  "articleSection": "Authority"
+}
+</script>
+</head>
+<body>
+<nav class="top-nav">
+<div class="wrap">
+<a class="wordmark" href="index.html">BICKER TABLE ADVISORY</a>
+<div class="nav-links">
+<a href="index.html#organizations">Organizations</a>
+<a href="authority.html">Authority</a>
+<a href="http://hackhappiness.art/" target="_blank" rel="noopener">Individuals</a>
+<a href="engagements.html">Engagements</a>
+<a href="essays.html">Essays</a>
+</div>
+</div>
+</nav>
+
+<header class="hero" style="padding:72px 0 64px;">
+<div class="wrap article-header">
+<div class="eyebrow" style="color:var(--accent);">Authority &middot; Essay 03</div>
+<h1>The Buyer Is the Second Reader.</h1>
+<p class="sub" style="max-width:680px;">She spent two weeks writing the profile for the buyer. On a matching platform, someone else decides whether the buyer ever sees it.</p>
+<div class="article-meta">BICKER TABLE ADVISORY &middot; AUTHORITY SERIES &middot; ESSAY 03</div>
+</div>
+</header>
+<section class="zone-gray" style="padding:44px 0 8px;">
+<div class="wrap">
+<figure class="essay-cover">
+<picture>
+<source srcset="images/the-buyer-is-the-second-reader.webp" type="image/webp">
+<img src="images/the-buyer-is-the-second-reader.jpg" alt="The Buyer Is the Second Reader" width="1080" height="1350" loading="eager">
+</picture>
+</figure>
+</div>
+</section>
+
+<section>
+<div class="wrap article-body">
+
+<p class="lede-p">Picture a fractional CFO who spent two weeks refining her profile. She tightened the headline. She softened the verb tense so it would not sound boastful. She described her career arc, from early finance roles through a growth-stage company that exited to a few lines about advisory work. She wrote it for the founder she hoped to impress.</p>
+
+<p>She wrote it for the buyer. The first reader may be someone else.</p>
+
+<h2 class="section-head">The Recruiter May Read First</h2>
+
+<p>Go Fractional, which sells hiring services and membership, says buyers tell it the role, scope, and timeline they need, and that a dedicated executive recruiter verifies each candidate's qualifications, availability, and interest before sending the candidate to the buyer. It says it can match in about three days. Those are the company's claims, and I have not tested them. The site also lets buyers browse members by function, so a recruiter does not read every profile first. But on the matched path, the request comes before the profile.</p>
+
+<p>A matching process starts from a request, and the platform says it asks about the role, the scope, and the timeline. Whoever screens candidates compares profiles against that request. I am inferring how that screening works from how the platform describes it, and I cannot see the requests.</p>
+
+<p class="standalone">On a matching marketplace, someone has already decided to forward your profile before a buyer ever reads it.</p>
+
+<h2 class="section-head">What the Screener Can See That You Cannot</h2>
+
+<p>The recruiter compares many profiles against one request. The executive sees only her own profile and cannot see what is being matched against. You do not know whether the request named an industry, a revenue threshold, a type of transformation, or a location. You wrote without that information, and the screener reads with all of it.</p>
+
+<p>A career narrative is written for someone who knows you. It gives context, builds trust over time, and shows trajectory. A screen against a request rewards something different: whether the first lines answer the problem on the page.</p>
+
+<p>Look at the five member profiles featured on Go Fractional's homepage. Each pairs a role with past employers and a short summary of expertise areas. Two cite years of experience, and one ends with "and more." They read as identity documents. They answer who this person is. They are slower to answer whether this person fits a specific request.</p>
+
+<p>A strong career does not speak for itself. It speaks only when someone stops to listen.</p>
+
+<p>A recruiter with time and a deep knowledge of the network may read past the prose and see what is there. She will know that a CFO who took a company from Series A to exit can probably run a financial close for a growth-stage software company, even if the profile never says so. That is the best case. A tighter screen against a narrow brief favors the profile already organized around the problem and may pass over the one that makes the reader infer it. I cannot tell you how often that happens. Relying on inference is a bet, and the profiles that lose it do not announce it.</p>
+
+<h2 class="section-head">The Usual Advice Points at the Second Reader</h2>
+
+<p>The usual advice is to write for the buyer. Speak to the founder's fears. Show you understand the growth-stage pressure. Demonstrate that you have been in that seat. That advice is not wrong. It describes the second conversation. On a matched path, the profile has to clear a screen before it reaches the buyer who would respond to that language. A pitch built for the CEO can still lose to the procurement officer who decides who makes the short list.</p>
+
+<p>A profile that works for both readers answers the screen and speaks to the buyer's problem. Specificity about the type of mandate, the company stage, the scope of the problem, and the available time commitment serves both. A recruiter can match it. A buyer can feel it.</p>
+
+<p>The question is not whether your career speaks for itself. The question is whether your profile answers a request that was written before you were considered.</p>
+
+<h2 class="section-head">What Answering a Request Looks Like</h2>
+
+<p>A profile written for the first read names the problem before it names the experience. It signals the stage and type of company where the executive has worked. It makes availability concrete instead of open-ended. It uses the language of outcomes instead of the language of tenure. And it does this in the first lines, before the reader has to scroll.</p>
+
+<p>That structure does not erase career context. It reorders it. The mandate comes first because that is what gets matched. The career follows because that is what the buyer will want to verify.</p>
+
+<p>Read the first three lines of your profile as if you did not know the person. Do they say what problem she fixes, for what kind of company, and when she is available?</p>
+
+<p>At Bicker Table Advisory, I help experienced professionals turn their expertise into market authority that buyers can recognize and trust. That means clear positioning, attributable evidence of the work, and an AI visibility check on how they appear when buyers search, including through AI assistants.</p>
+
+<p>Write the first lines for the reader who decides whether anyone else reads the rest.</p>
+
+<ul class="sources-list">
+<li>Go Fractional homepage (gofractional.com), read October 2026. Statements about how buyers request talent, recruiter verification, and match time are the company's own claims.</li>
+</ul>
+</div>
+</section>
+
+<section class="zone-gray">
+<div class="wrap">
+<div class="article-cta">
+<h3 style="color:var(--paper); font-size:22px;">This is one piece from the Authority series.</h3>
+<p>See how a full engagement builds a coherent body of this kind of evidence, or read the rest of the series.</p>
+<a class="btn on-navy-ghost" href="engagements.html">See the Engagements &rarr;</a>
+</div>
+</div>
+</section>
+
+<footer class="zone-navy">
+<div class="wrap">
+<div class="footer-nav">
+<a href="index.html">Home</a>
+<a href="essays.html">Essays</a>
+<a href="authority.html">Authority</a>
+<a href="engagements.html">Engagements</a>
+</div>
+<div class="fine">Questions first? <a href="mailto:jamie.arias@bickertable.com" style="text-decoration:underline;">jamie.arias@bickertable.com</a></div>
+<div class="fine">bickertable.com &middot; Human Directed. AI Accelerated.</div>
+</div>
+</footer>
+
+</body>
+</html>
