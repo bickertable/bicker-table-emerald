@@ -1,30 +1,53 @@
 # Bicker Table Advisory
 
-> Bicker Table is an authority and AI-visibility advisory for experienced operators:
-> fractional executives, operators, and coaches. It helps them state one clear
-> position, publish attributable evidence of their work, and become findable and
-> correctly described when buyers search, including through AI assistants.
+> I'm an AI Systems Architect for organizations that run on people. I help established schools and service businesses in the US and UK move from staff using AI on their own to AI that works across the operation with people directing it.
 
-Bicker Table is run by Jamie Arias. Based in Palm Desert, California.
+Bicker Table Advisory is the trade name of TBT Advisory LLC, Palm Desert, California.
+Founder: Jamie Arias (she/her), founder and AI Systems Architect. She is the sole founder.
 Contact: jamie.arias@bickertable.com
 
-## Essays
+Campaign: From Using AI to Operating with AI.
+Thesis: Individual AI productivity is not organizational intelligence.
 
-- [The First Referral Problem](https://bickertable.com/the-first-referral-problem.html): Referrals travel as a single sentence, and a vague one costs the candidate everything. How to build a sentence specific enough to survive the introduction.
-- [Buyers Search for a Word You May Never Have Used](https://bickertable.com/buyers-search-for-a-word.html): Buyers search with vocabulary many experienced professionals never used. When that word is missing from everything you own, the work reads as hard to find.
-- [The Buyer Is the Second Reader](https://bickertable.com/the-buyer-is-the-second-reader.html): On a matching marketplace a screener reads your profile before any buyer does, against a request you cannot see.
-- [A List of What You Know Is Not a Position](https://bickertable.com/a-list-of-what-you-know-is-not-a-position.html): A competency list looks like a writing problem and behaves like a logic problem.
-- [Who Writes the Answer About Your Role?](https://bickertable.com/who-writes-the-answer-about-your-role.html): When a founder asks an AI assistant who to hire, the answer often rests on guides written by the firms being recommended.
-- [All essays](https://bickertable.com/essays.html)
+The first conversation is a 15 to 20 minute call, also called From Using AI to Operating with AI.
+In 15 to 20 minutes, Jamie looks at how a team is using AI today and where it could create the most value next.
+The leader leaves with a clear picture of their starting point and one practical next step. No pitch, no prep.
 
-## Services
+- Book: https://bickertable.com/book/
+- Calendar: https://calendar.app.google/b1x45zqXGBStd7sQ6
 
-- [Authority](https://bickertable.com/authority.html): how the authority work is structured.
-- [Engagements](https://bickertable.com/engagements.html): engagement options and pricing.
-- [Organizations](https://bickertable.com/organizations.html): work with teams and firms.
+## Audiences
 
-## Notes
+- Owners and CEOs of established service businesses in the US and UK, about 20 to 250 people: https://bickertable.com/businesses/
+- Heads of independent, private, and charter schools, and leaders of UK academy trusts: https://bickertable.com/schools/
 
-The essays are original, first-person analysis by Jamie Arias. Some cite named
-third-party sources; where a figure could not be traced to its original dataset,
-the essay says so in the text.
+## Opportunity Brief
+
+https://bickertable.com/opportunity-brief/
+The Agentic AI Opportunity Brief is the discovery Jamie uses when the 15 to 20 minute call shows a reason to go further.
+It is an early look at the operation, in fifteen named parts, business first. It is not a technical audit and not an implementation specification.
+
+## Insights
+
+Series: From Using AI to Operating with AI. Tuesday essays are for service-business owners. A Wednesday series for school leaders is planned. The site is the canonical home for the essays.
+Index: https://bickertable.com/insights/
+
+- Week 1, Your Team's ChatGPT Habits Are Your Real Operating Manual: staff using AI on their own is not the same as an organization that keeps what it learns. https://bickertable.com/insights/your-teams-chatgpt-habits/
+- Week 2, Your AI Starting Point Depends on Which Door You Open: each part of a business has its own starting point with AI. https://bickertable.com/insights/which-door-you-open/
+
+## About
+
+https://bickertable.com/about/
+Jamie Arias, founder and AI Systems Architect. Ten years teaching (K-12, adults, Title I middle grades). Twenty years in sales, including digital marketing for home health and real estate. Three prompt-engineering and auditing projects with major AI companies, two with Google and one with Meta. Bilingual in English and Spanish. Palm Desert, California.
+
+## Take the AI Starting Point Check
+
+https://bickertable.com/starting-point/
+Take the AI Starting Point Check. Free, about three minutes. No login, no email, and nothing is stored or sent. The visitor chooses a business path or a school path, answers 11 questions, and sees one of three starting pictures: Individual Experiments, Pockets of Practice, or Ready to Operate with AI. It is a quick self-check, not an audit or compliance review. Booking the 15 to 20 minute call is separate: https://bickertable.com/book/
+
+## Contact
+
+jamie.arias@bickertable.com
+Palm Desert, CA
+https://bickertable.com/privacy.html
+https://bickertable.com/terms.html
