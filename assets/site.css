@@ -301,3 +301,48 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:700;letter-spacing:-.015em;marg
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
 }
+
+/* Starting point check */
+.check-paths{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.check-path{
+  display:block;text-align:left;width:100%;
+  background:var(--card);color:var(--ink);
+  border:1px solid var(--rule);border-top:4px solid var(--yellow);
+  padding:22px 20px;cursor:pointer;
+  font:inherit;appearance:none;
+}
+.check-path .kicker{color:#1f4f86}
+.check-path:hover{border-color:var(--navy)}
+.check-path-title{display:block;font-family:var(--serif);font-weight:700;font-size:28px;line-height:1.15;margin:8px 0}
+.check-path p{color:var(--ink-soft)}
+.check-progress{height:6px;background:rgba(16,28,51,.1);margin:18px 0 8px}
+.check-progress span{display:block;height:6px;background:var(--yellow)}
+.check-count{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#1f4f86}
+.q-options{display:grid;gap:10px;margin-top:20px}
+.q-options label{
+  display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start;
+  background:var(--card);border:1px solid var(--rule);padding:14px 16px;cursor:pointer;
+}
+.q-options label:hover{border-color:var(--navy)}
+.q-options input{width:18px;height:18px;margin-top:3px;accent-color:var(--navy)}
+.q-options label:has(input:checked){border-color:var(--navy);box-shadow:inset 4px 0 0 var(--yellow);background:#fff}
+.q-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:22px}
+.check-note{margin-top:18px;font-size:14.5px;color:var(--ink-soft);max-width:68ch}
+#check-ask h2{font-size:clamp(26px,3.2vw,36px);max-width:34ch}
+#check-ask h2:focus,#check-result h2:focus{outline:none}
+#check-result h2.result-tier{
+  font-family:var(--serif);font-size:clamp(32px,4vw,48px);line-height:1.15;max-width:16ch;
+}
+#check-result h3,.book-panel h3{color:inherit;font-size:clamp(26px,3vw,34px);margin-top:28px}
+.book-panel h3{color:var(--on-navy);margin-top:0}
+.obs{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.obs li{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--yellow);padding:14px 16px}
+@media(max-width:720px){
+  .check-paths{grid-template-columns:1fr}
+}
+@media print{
+  .site-header,.site-footer,.no-print{display:none !important}
+  body{background:#fff}
+  .check-result{display:block !important}
+  a{text-decoration:none}
+}
