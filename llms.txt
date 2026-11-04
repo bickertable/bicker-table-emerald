@@ -9,7 +9,7 @@ Contact: jamie.arias@bickertable.com
 Campaign: From Using AI to Operating with AI.
 Thesis: Individual AI productivity is not organizational intelligence.
 
-The first conversation is a 15 to 20 minute pre-assessment, also called From Using AI to Operating with AI.
+The first conversation is a 15 to 20 minute call, also called From Using AI to Operating with AI.
 In 15 to 20 minutes, Jamie looks at how a team is using AI today and where it could create the most value next.
 The leader leaves with a clear picture of their starting point and one practical next step. No pitch, no prep.
 
@@ -24,7 +24,7 @@ The leader leaves with a clear picture of their starting point and one practical
 ## Opportunity Brief
 
 https://bickertable.com/opportunity-brief/
-The Agentic AI Opportunity Brief is the discovery Jamie uses when the pre-assessment shows a reason to go further.
+The Agentic AI Opportunity Brief is the discovery Jamie uses when the 15 to 20 minute call shows a reason to go further.
 It is an early look at the operation, in fifteen named parts, business first. It is not a technical audit and not an implementation specification.
 
 ## Insights
